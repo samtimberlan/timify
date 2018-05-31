@@ -1,0 +1,178 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: url("../images/Header.PNG");
+}
+
+.background {
+  background-color: #204b6ee0;
+  background-size: cover;
+  display: table;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20%;
+}
+
+.loginContainer * {
+  color: #f0f8ffb3;
+  font-family: "calibri", "Helvetica", "Arial", "sans-serif";
+  line-height: 1em;
+  box-sizing: border-box;
+}
+
+.loginContainer {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  position: relative;
+}
+
+::-webkit-input-placeholder {
+  color: #a0a0a0;
+}
+
+::-moz-placeholder {
+  color: #a0a0a0;
+}
+
+:-moz-placeholder {
+  color: #a0a0a0;
+}
+
+::-ms-input-placeholder {
+  color: #a0a0a0;
+}
+
+:-ms-input-placeholder {
+  color: #a0a0a0;
+}
+
+#inputContainer {
+  width: 50%;
+  padding-top: 7%;
+  padding-right: 10%;
+  float: left;
+  /*border-right: 1px solid #999;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  padding: 6% 9%;
+}
+
+#loginForm h2 {
+  font-size: 1.8em;
+}
+
+form {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  #inputContainer {
+    width: 100%;
+    padding: 0;
+    float: left;
+    border: 0;
+  }
+}
+
+#inputContainer h2 {
+  text-align: center;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid aliceblue;
+  height: 27px;
+  line-height: 27px;
+  width: 100%;
+  font-size: 1.1em
+}
+
+#inputContainer label {
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 5%;
+  display: block;
+}
+
+#inputContainer button {
+  background-color: transparent;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin: auto;
+  width: 100%;
+  height: 41px;
+}
+
+#inputContainer button:hover {
+  cursor: pointer;
+  background-color: #143a5a;
+}
+
+.has-account-text span {
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.has-account-text span b {
+  cursor: pointer;
+}
+
+.has-account-text {
+  text-align: center;
+}
+
+#registerForm,
+#loginForm {
+  display: none;
+}
+
+#loginText {
+  padding: 0 45px;
+  display: table-cell;
+}
+
+#loginText h1 {
+  color: #51d5ff;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#loginText h2 {
+  margin: 35px 0;
+}
+
+#loginText ul {
+  padding: 0%;
+}
+
+#loginText ul li {
+  font-size: 1.2em;
+  list-style-type: disc;
+  padding: 2.5% 15%;
+  /*background: url(../images/icons/checkmark.png) no-repeat 0 0;*/
+}
+
+#inputContainer .errorMessage {
+  display: block;
+  color: #27cba3;
+  font-size: .9em;
+}
+
+@media only screen and (max-width: 500px) {
+  .background {
+    padding: 5px 10px;
+  }
+}
